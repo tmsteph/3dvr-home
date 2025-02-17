@@ -10,29 +10,33 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            background-color: #121212;
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #333;
         }
         header {
-            background: #1e1e1e;
+            background: linear-gradient(90deg, #4285F4, #EA4335, #FBBC05, #34A853);
             padding: 40px 20px;
+            color: white;
         }
-        header img {
-            width: 150px;
-            height: auto;
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
         }
         .cta-button {
             display: inline-block;
             padding: 15px 30px;
-            background: #ff4081;
-            color: #ffffff;
+            background: #34A853;
+            color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 1.2em;
             margin-top: 20px;
-            transition: background 0.3s;
+            transition: background 0.3s, transform 0.2s;
         }
         .cta-button:hover {
-            background: #e73370;
+            background: #2e8b47;
+            transform: scale(1.05);
         }
         section {
             padding: 60px 20px;
@@ -45,24 +49,25 @@
             margin-top: 40px;
         }
         .service-item, .project-item {
-            background: #1e1e1e;
+            background: #f4f4f4;
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             max-width: 300px;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .service-item:hover, .project-item:hover {
             transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
         footer {
-            background: #1e1e1e;
-            color: #ffffff;
+            background: #4285F4;
+            color: white;
             padding: 20px;
             margin-top: 40px;
         }
         footer a {
-            color: #ff4081;
+            color: #FBBC05;
             text-decoration: none;
         }
         footer a:hover {
@@ -72,7 +77,6 @@
 </head>
 <body>
     <header>
-        <img src="path-to-your-logo.png" alt="3DVR Tech Logo">
         <h1>3DVR Tech</h1>
         <p>Help the World, Make Money, and Have Fun!</p>
         <a href="#subscribe" class="cta-button">Join Us</a>
