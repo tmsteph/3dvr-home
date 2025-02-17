@@ -5,42 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3DVR Tech - Help the World, Make Money, Have Fun!</title>
     <style>
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
-            background-color: #ffffff;
             color: #333;
+            background: linear-gradient(-45deg, #4285F4, #EA4335, #FBBC05, #34A853);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
         }
+        
         header {
-            background: linear-gradient(90deg, #4285F4, #EA4335, #FBBC05, #34A853);
+            background: rgba(255, 255, 255, 0.8);
             padding: 40px 20px;
-            color: white;
+            color: #333;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
         }
+        
         header h1 {
             font-size: 2.5em;
             margin: 0;
             text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
         }
+        
         .cta-button {
             display: inline-block;
             padding: 15px 30px;
             background: #34A853;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 10px;
             font-size: 1.2em;
             margin-top: 20px;
             transition: background 0.3s, transform 0.2s;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
         }
+        
         .cta-button:hover {
             background: #2e8b47;
             transform: scale(1.05);
         }
+        
         section {
             padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
+        
         .service-grid, .project-grid {
             display: flex;
             justify-content: center;
@@ -48,28 +69,35 @@
             flex-wrap: wrap;
             margin-top: 40px;
         }
+        
         .service-item, .project-item {
-            background: #f4f4f4;
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
             max-width: 300px;
             transition: transform 0.3s, box-shadow 0.3s;
         }
+        
         .service-item:hover, .project-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
+        
         footer {
-            background: #4285F4;
-            color: white;
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
             padding: 20px;
             margin-top: 40px;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
         }
+        
         footer a {
-            color: #FBBC05;
+            color: #EA4335;
             text-decoration: none;
         }
+        
         footer a:hover {
             text-decoration: underline;
         }
